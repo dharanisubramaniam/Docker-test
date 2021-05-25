@@ -1,0 +1,11 @@
+version: '2'
+services:
+  oerrors:
+    build: ./oerrors
+    ports:
+      - '3000:80'
+  oerrors_backend:
+    build: ./oerrors_backend
+    ports:
+      - '5000:5000'
+ 
